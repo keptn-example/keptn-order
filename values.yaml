@@ -2,3 +2,5 @@ frontend:
   enabled: false
 frontend-generated:
   enabled: false
+order:
+  enabled: false
