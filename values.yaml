@@ -2,6 +2,8 @@ catalog:
   enabled: false
 catalog-generated:
   enabled: false
+customer:
+  enabled: false
 frontend:
   enabled: false
 frontend-generated:
