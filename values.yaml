@@ -1,5 +1,7 @@
 catalog:
   enabled: false
+catalog-generated:
+  enabled: false
 frontend:
   enabled: false
 frontend-generated:
