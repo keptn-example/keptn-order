@@ -1,3 +1,5 @@
+catalog:
+  enabled: false
 frontend:
   enabled: false
 frontend-generated:
