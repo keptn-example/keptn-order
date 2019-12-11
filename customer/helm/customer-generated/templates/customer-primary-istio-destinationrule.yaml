@@ -1,0 +1,7 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  creationTimestamp: null
+  name: customer-primary
+spec:
+  host: customer-primary.keptnorders-production.svc.cluster.local
