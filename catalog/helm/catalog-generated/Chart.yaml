@@ -1,0 +1,4 @@
+keywords:
+- deployment_strategy=duplicate
+name: catalog-generated
+version: 0.1.0
