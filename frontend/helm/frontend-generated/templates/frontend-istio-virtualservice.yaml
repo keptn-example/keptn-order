@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  creationTimestamp: null
+  name: frontend
+spec:
+  gateways:
+  - keptnorders-production-gateway.keptnorders-production
+  - mesh
+  hosts:
+  - frontend.keptnorders-production.34.90.95.58.xip.io
+  - frontend
+  http:
+  - route:
+    - destination:
+        host: frontend-canary.keptnorders-production.svc.cluster.local
+    - destination:
+        host: frontend-primary.keptnorders-production.svc.cluster.local
+      weight: 100
