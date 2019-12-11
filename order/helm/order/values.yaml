@@ -1,2 +1,2 @@
-replicaCount: 1
 image: robjahn/keptn-orders-order-service:1
+replicaCount: 1
