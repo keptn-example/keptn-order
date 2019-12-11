@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  creationTimestamp: null
+  name: frontend
+spec:
+  gateways:
+  - keptnorders-staging-gateway.keptnorders-staging
+  - mesh
+  hosts:
+  - frontend.keptnorders-staging.34.90.95.58.xip.io
+  - frontend
+  http:
+  - route:
+    - destination:
+        host: frontend.keptnorders-staging.svc.cluster.local
