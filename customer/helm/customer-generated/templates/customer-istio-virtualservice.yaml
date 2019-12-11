@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  creationTimestamp: null
+  name: customer
+spec:
+  gateways:
+  - keptnorders-staging-gateway.keptnorders-staging
+  - mesh
+  hosts:
+  - customer.keptnorders-staging.34.90.95.58.xip.io
+  - customer
+  http:
+  - route:
+    - destination:
+        host: customer.keptnorders-staging.svc.cluster.local
