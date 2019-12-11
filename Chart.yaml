@@ -1,0 +1,4 @@
+apiVersion: v1
+description: A Helm chart for project keptnorders-umbrella
+name: keptnorders-umbrella
+version: 0.1.0
