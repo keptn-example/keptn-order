@@ -14,6 +14,6 @@ spec:
   - route:
     - destination:
         host: order-canary.keptnorders-production.svc.cluster.local
+      weight: 100
     - destination:
         host: order-primary.keptnorders-production.svc.cluster.local
-      weight: 100
