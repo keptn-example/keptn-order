@@ -2,11 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    deployment.kubernetes.io/revision: "1"
+    deployment.kubernetes.io/revision: "2"
   creationTimestamp: "2019-12-11T11:23:10Z"
-  generation: 1
+  generation: 2
   name: customer-primary
-  resourceVersion: "26563"
+  resourceVersion: "398384"
   selfLink: /apis/apps/v1/namespaces/keptnorders-production/deployments/customer
   uid: 9caa98d6-1c08-11ea-b21c-42010aa40100
 spec:
@@ -43,7 +43,7 @@ spec:
               apiVersion: v1
               fieldPath: metadata.labels['deployment']
         - name: CONTAINER_IMAGE
-          value: robjahn/keptn-orders-customer-service:1
+          value: robjahn/keptn-orders-catalog-service:1
         - name: KEPTN_PROJECT
           value: keptnorders
         - name: KEPTN_STAGE
@@ -52,7 +52,7 @@ spec:
           value: customer
         - name: KEPTN_DEPLOYMENT
           value: canary
-        image: robjahn/keptn-orders-customer-service:1
+        image: robjahn/keptn-orders-catalog-service:1
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
