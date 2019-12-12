@@ -1,2 +1,2 @@
-image: robjahn/keptn-orders-customer-service:1
+image: robjahn/keptn-orders-catalog-service:1
 replicaCount: 1
